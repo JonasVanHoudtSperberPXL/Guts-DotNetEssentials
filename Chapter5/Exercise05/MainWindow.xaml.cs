@@ -29,7 +29,22 @@ namespace Exercise05
                                    double width,
                                    double height)
         {
-            //TODO
+            Point point1 = new Point(xPlace, yPlace);
+            Point point2 = new Point(xPlace, yPlace + height);
+            Point point3 = new Point(xPlace + width, yPlace + height);
+
+            PointCollection points = new PointCollection();
+            points.Add(point1);
+            points.Add(point2);
+            points.Add(point3);
+
+            Polygon triangle = new Polygon()
+            {
+                Points = points,
+                Stroke = brushToUse
+            };
+
+            drawingArea.Children.Add(triangle);
         }
 
 
