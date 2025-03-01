@@ -6,6 +6,7 @@ using System.Windows.Shapes;
 using Guts.Client.Core;
 using Guts.Client.WPF.TestTools;
 using NUnit.Framework;
+using Oef5_6;
 
 namespace Exercise06.Tests;
 
